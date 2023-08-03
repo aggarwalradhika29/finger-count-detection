@@ -1,5 +1,5 @@
 # finger-count-detection
-
+### Efforts by: Radhika Aggarwal, Sanya Rao
 ## Introduction
 This work represents our AI in robotics project whose problem statement using CV2 and Mediapipe library with an Arduino Nano connected to a 7-segment display is to develop a reliable and accurate system that can detect and interpret hand gestures in real-time and display the number of fingers being held up on the 7-segment display module. The system should be designed to work in different lighting conditions and be able to detect hand gestures from a reasonable distance.
 
