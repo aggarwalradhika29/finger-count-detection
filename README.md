@@ -17,6 +17,11 @@ model.add(Conv2D(128, (3,3), activation = 'relu'))
 model.add(Flatten())
 model.add(Dense(6, activation = 'softmax'))
 ```
+
+# Circuit Diagram
+![circuit](https://github.com/aggarwalradhika29/finger-count-detection/assets/91591831/eed9f32b-5146-45fa-87ed-c09ae70319da)
+
+
 # Execution
 Make sure your robot has a Bluetooth connection, connect to it using your laptop or any PC that has a webcam. Check which ports the robot is connected to and change its value in ```python-code.py``` here:
 ```py
@@ -34,3 +39,8 @@ python3 python-code.py
 ```
 
 ### Video Demonstration:
+
+
+https://github.com/aggarwalradhika29/finger-count-detection/assets/91591831/4e86908c-81c5-49dd-8cc2-41d4b2149ff2
+
+
