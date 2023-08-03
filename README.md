@@ -9,17 +9,7 @@ Upload the ```runTheMotors.ino``` to your Arduino Uno, make sure it's always ON 
 ## Classes
 ### void
 there are no hands in the frame, in this case the robot shouldn't do any changes to his actual state.
-### Forward
-The robot moves forward :raised_hand:
-### Backward
-The robot moves backwards :fist:
-### Right
-The robot goes right :thumbsdown:
-### Left
-The robot goes left :thumbsup:
-### Stop
-the robot stops :ok_hand:
-
+The model display the number of fingers present in the frame on the 7-segment display .
 ## Model Structure
 ```py
 model = Sequential()
