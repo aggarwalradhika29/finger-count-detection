@@ -3,6 +3,21 @@
 ## Introduction
 This work represents our AI in robotics project which is about controlling an Arduino Nano-connected 7-segment display using the Deep Learning algorithm: CNN. This project can be used for other similar cases.
 
+# Requirements
+## 1. Hardware Requirements
+- High-end workstation containing GPU,
+- WebCam
+- Arduino NANO
+- Breadboard
+- 7-segment
+- Jumper Wires
+
+## 2. Software Requirements
+- Python (opencv-python, mediapipe, pyserial)
+- Code Editor
+- Arduino IDE
+
+
 ## Robot building
 Upload the ```arduinoNano.ino``` to your Arduino Nano, and make sure it's always ON as well as the Bluetooth connected to it.
 
@@ -18,7 +33,7 @@ model.add(Flatten())
 model.add(Dense(6, activation = 'softmax'))
 ```
 
-# Circuit Diagram
+### Circuit
 ![circuit](https://github.com/aggarwalradhika29/finger-count-detection/assets/91591831/eed9f32b-5146-45fa-87ed-c09ae70319da)
 
 
