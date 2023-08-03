@@ -2,7 +2,6 @@ import glob
 import cv2
 import os
 import csv
-
 # Writing data to csv file
 array_of_train_data = []
 array_of_test_data = []
@@ -14,7 +13,6 @@ test_data = ["label"]
 for i in range(0, 10000):
     train_data.append("pixel_" + str(i))
 array_of_train_data.append(train_data)
-
 for file in glob.glob("train/*"):
     img = cv2.imread(file)
     filename, file_extension = os.path.splitext(file)
@@ -29,13 +27,11 @@ for file in glob.glob("train/*"):
     for i in range(0, len(data_in_line)):
         train_data.append(data_in_line[i])
     array_of_train_data.append(train_data)
-
 csv_filename = "data_train.csv"
 with open(csv_filename, 'w') as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerows(array_of_train_data)
 print("done")
-
 # for test data
 for i in range(0, 10000):
     test_data.append("pixel_" + str(i))
@@ -54,7 +50,6 @@ for file in glob.glob("test/*"):
     for i in range(0, len(data_in_line)):
         test_data.append(data_in_line[i])
     array_of_test_data.append(test_data)
-
 csv_filename = "data_test.csv"
 with open(csv_filename, 'w') as csvfile:
     csvwriter = csv.writer(csvfile)
