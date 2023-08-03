@@ -1,15 +1,13 @@
 # finger-count-detection
 
 ## Introduction
-This work represents our final project for our first year in ENSIAS, it's about controlling an Arduino Uno robot using the Deeo Learning algorithm: CNN. This project can be used for other similar cases.
+This work represents our AI in robotics project which is about controlling an Arduino Nano-connected 7-segment display using the Deep Learning algorithm: CNN. This project can be used for other similar cases.
 
 ## Robot building
-Upload the ```runTheMotors.ino``` to your Arduino Uno, make sure it's always ON as well as the bluetooth connected to it.
+Upload the ```arduinoNano.ino``` to your Arduino Nano, and make sure it's always ON as well as the Bluetooth connected to it.
 
-## Classes
-### void
-there are no hands in the frame, in this case the robot shouldn't do any changes to his actual state.
-The model display the number of fingers present in the frame on the 7-segment display .
+The model displays the number of fingers present in the frame on the 7-segment display.
+
 ## Model Structure
 ```py
 model = Sequential()
@@ -20,17 +18,19 @@ model.add(Flatten())
 model.add(Dense(6, activation = 'softmax'))
 ```
 # Execution
-Make sure your robot has a bluetooth connection, connect to it using your laptop or any PC that has a webcam. Check which ports the robot is connected to and change its value in ```main.py``` here:
+Make sure your robot has a Bluetooth connection, connect to it using your laptop or any PC that has a webcam. Check which ports the robot is connected to and change its value in ```python-code.py``` here:
 ```py
 serialcomm = Serial('COM6', 9600)
 ```
 In our case, it's COM6.
-Once it's done, execute the ```main.py```
+Once it's done, execute the ```python-code.py```
 ### Windows:
 ```powershell
-python .\main.py
+python .\python-code.py
 ```
 ### Linux/Mac:
 ```bash
-python3 main.py
+python3 python-code.py
 ```
+
+### Video Demonstration:
